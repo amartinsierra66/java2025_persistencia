@@ -20,9 +20,9 @@ public class Contacto {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idContacto;
 	private String nombre;
-	@Column(name="email")
+	
 	private String email;
-	@Column(name="edad")
+	
 	private int edad;
 	
 }
