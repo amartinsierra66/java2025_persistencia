@@ -10,7 +10,7 @@ import dao.MovimientosDao;
 import model.Cliente;
 import model.Cuenta;
 import model.Movimiento;
-
+//Estoy usando el patron de factoría
 class CajeroServiceImpl implements CajeroService {
 	ClientesDao clientesDao;
 	CuentasDao cuentasDao;
