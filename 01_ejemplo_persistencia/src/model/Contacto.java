@@ -22,6 +22,7 @@ public class Contacto {
 	private String nombre;
 	@Column(name="email")
 	private String email;
+	@Column(name="edad")
 	private int edad;
 	
 }
