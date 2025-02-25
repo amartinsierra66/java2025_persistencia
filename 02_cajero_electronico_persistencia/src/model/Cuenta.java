@@ -1,7 +1,11 @@
 package model;
 
+import java.util.List;
+
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -17,5 +21,8 @@ public class Cuenta {
 	private int numeroCuenta;
 	private double saldo;
 	private String tipoCuenta;
-	
+	@OneToMany(mappedBy = "cuenta")
+	List<Movimiento> movimientos;
+	@ManyToMany(mappedBy = "cuentas")
+	List<Cliente> clientes;
 } 
